@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Desarrollamos WEB</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="atributos.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="form.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#texto1" class="active">Inicio</a>
+  <a href="#texto1">Acerca de nosotros</a>
+  <div class="dropdown">
+    <button class="dropbtn">Links de interes
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Nuestros clientes</a>
+      <a href="#">Patrocinadores</a>
+      <a href="#">Testimonios</a>
+      
+    </div>
+  </div> 
+  <a href="section">Contactenos</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="contenedor1">
+    
+    <div class="texto1"><center><h1>Tu lo imaginas, nosotros lo creamos</h1><br><h1>Cuentanos tu idea para tu pagina web, <br>
+        nosotros la diseñaremos y crearemos la que se adapta a tus gustos.</h3></center></div>
+
+</div>
+<div class="contenedor2">
+    <div class="texto2"><h1>Dejalo en nuestras manos, nosotros lo diseñamos por ti.</h1></div>
+</div>
+<div class="section">
+    <h1><span><center>Dejanos saber quien eres</span></h1></center>
+    <form><br><br>
+    <p>Nombre</p></p>
+        <input name="Nombre"              type="text" />    
+      <br/> 
+       <p>Email</p>
+        <input name="Email" type="email" />
+        <br/>
+        <p>Mensaje</p>
+        <textarea name="message" ></textarea>
+        <input type="submit" value="Enviar" class="submit" />
+    </form>
+</div>
+ 
+
+<footer>
+
+    <div class="container-footer-all">
+
+        <div class="container-body">
+
+            <div class="columna1">
+                <h1>Desarrollo WEB</h1>
+
+                <p>Nos caracterizamos por tener el compromiso en tu solicitud, si empre estammos dispuestos a generar tu satisfacción
+                </p>
+            </div>
+
+            <div class="columna2">
+                <h1>Redes Sociales</h1>
+
+               <div class="row">
+                   <img src="iconos/facebook.png" alt="Fc">
+                   <label for="Facebook">Siguenos en Facebook</label>
+               </div>
+               <div class="row">
+                    <img src="iconos/twitter.png" alt="Tw">
+                    <label for="Twitter">Siguenos en Twitter</label>
+                </div>
+                <div class="row">
+                    <img src="iconos/instagram.png" alt="Ig">
+                    <label for="Instagram">Siguenos en Instagram</label>
+                </div>
+                <div class="row">
+                    <img src="iconos/google.png" alt="Gg">
+                    <label for="Google">Siguenos en Google</label>
+                </div>
+                <div class="row">
+                    <img src="iconos/pinterest.png" alt="Pt">
+                    <label for="Pinterest">Siguenos en Pinterest</label>
+                </div>                        
+
+            </div>
+
+            <div class="columna3">
+
+                <h1>Información Contactos</h1>
+
+                <div class="row2">
+                    <img src="iconos/house.png" alt="house">
+                    <label for="">Bogotá, Colombia
+                        Servicios desarrolo web
+                        </label>
+                </div>
+
+                <div class="row2">
+                    <img src="iconos/smartphone.png" alt="cellphone">
+                    <label for="">+57-123-456-789
+                    </label>
+                </div>
+
+                <div class="row2">
+                    <img src="iconos/contacto.png" alt="contact">
+                    <label for="">desarolloweb@gmail.com
+                    </label>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-footer">
+        <div class="footer">
+
+            <div class="copyright">
+                © 2020 Todos los Derechos Reservados | <a href="">Fundamentos</a> 
+            </div>
+
+            <div class="information">
+                <a href="">Informacion Compañia</a> | 
+                <a href="">Privacion y Politica</a> | 
+                <a href="">Terminos y Condiciones</a>
+            </div>
+
+        </div>
+        
+    </div>
+    
+</footer>
+ 
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+
+</html>
