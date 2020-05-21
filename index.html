@@ -70,7 +70,7 @@
         <br/>
         <p>Mensaje</p>
         <textarea name="message" id="message"></textarea>
-        <input type="submit" value="Enviar" class="submit" />
+        <input type="submit" value="Enviar" class="submit" onclick="enviar" />
     </form>
 </div>
  
@@ -92,23 +92,27 @@
                 <h1>Redes Sociales</h1>
 
                <div class="row">
-                   <img src="iconos/facebook.png" alt="Fc">
-                   <label for="Facebook">Siguenos en Facebook</label>
+                  
+                  <a href=https://www.facebook.com target=_blank> <img src="iconos/facebook.png" alt="Fc"></a> <label for="Facebook">Siguenos en Facebook</label>
                </div>
+
                <div class="row">
-                    <img src="iconos/twitter.png" alt="Tw">
+                    <a href=https://twitter.com/explore target=_blank><img src="iconos/twitter.png" alt="Tw"></a>
                     <label for="Twitter">Siguenos en Twitter</label>
                 </div>
+
                 <div class="row">
-                    <img src="iconos/instagram.png" alt="Ig">
+                    <a href="https://www.instagram.com/"><img src="iconos/instagram.png" alt="Ig"></a>
                     <label for="Instagram">Siguenos en Instagram</label>
                 </div>
+
                 <div class="row">
-                    <img src="iconos/google.png" alt="Gg">
+                    <a href=https://www.google.com target=_blank><img src="iconos/google.png" alt="Gg"></a>
                     <label for="Google">Siguenos en Google</label>
                 </div>
+
                 <div class="row">
-                    <img src="iconos/pinterest.png" alt="Pt">
+                    <a href=https://www.pinterest.com target=_blank><img src="iconos/pinterest.png" alt="Pt"></a>
                     <label for="Pinterest">Siguenos en Pinterest</label>
                 </div>                        
 
@@ -184,6 +188,9 @@ function saveData(){
     })
     // codigo Johann
     return false;
+}
+function enviar(){
+    alert("Los datos han sido enviados satisfactoriamente");
 }
 </script>
 
