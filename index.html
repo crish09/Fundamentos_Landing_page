@@ -10,6 +10,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
 
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-database.js"></script>
+
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyAVjrNE3diUfL_cPBlZRCj08Jpo4M0XJMw",
+        authDomain: "landing-page-aad76.firebaseapp.com",
+        databaseURL: "https://landing-page-aad76.firebaseio.com",
+        projectId: "landing-page-aad76",
+        storageBucket: "landing-page-aad76.appspot.com",
+        messagingSenderId: "303450962999",
+        appId: "1:303450962999:web:ae78bd520f9e26340793b2",
+        measurementId: "G-LJDVZ1PCYY"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    var db = firebase.database()
+</script>
 </head>
 <body>
 
@@ -41,15 +61,15 @@
 </div>
 <div class="section">
     <h1><span><center>Dejanos saber quien eres</span></h1></center>
-    <form><br><br>
+    <form  onsubmit="return saveData()"><br><br>
     <p>Nombre</p></p>
-        <input name="Nombre"              type="text" />    
+        <input name="Nombre" id="name" type="text" />    
       <br/> 
        <p>Email</p>
-        <input name="Email" type="email" />
+        <input name="Email" type="email" id="email" />
         <br/>
         <p>Mensaje</p>
-        <textarea name="message" ></textarea>
+        <textarea name="message" id="message"></textarea>
         <input type="submit" value="Enviar" class="submit" />
     </form>
 </div>
@@ -151,6 +171,19 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
+}
+function saveData(){
+    var message = document.getElementById("message").value;
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    console.log("AAA: ", message, name, email)
+    db.ref("data-form").push({
+        message: message,
+        name: name,
+        email: email
+    })
+    // codigo Johann
+    return false;
 }
 </script>
 
